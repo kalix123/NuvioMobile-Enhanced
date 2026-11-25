@@ -1714,6 +1714,8 @@ object PlayerSettingsRepository {
 
 val PlayerSkipSecondsOptions = listOf(5, 10, 15, 30)
 const val PLAYER_SKIP_SECONDS_DEFAULT = 10
+const val PLAYER_SKIP_SECONDS_MIN = 1
+const val PLAYER_SKIP_SECONDS_MAX = 600
 
 const val SKIP_INTRO_OFFSET_SLIDER_SECONDS = 30
 const val SKIP_INTRO_OFFSET_MAX_SECONDS = 60
@@ -1722,4 +1724,4 @@ internal fun normalizeSkipIntroOffsetSeconds(seconds: Int?): Int =
     (seconds ?: 0).coerceIn(-SKIP_INTRO_OFFSET_MAX_SECONDS, SKIP_INTRO_OFFSET_MAX_SECONDS)
 
 internal fun normalizePlayerSkipSeconds(seconds: Int?): Int =
-    seconds?.takeIf { it in PlayerSkipSecondsOptions } ?: PLAYER_SKIP_SECONDS_DEFAULT
+    seconds?.takeIf { it in PLAYER_SKIP_SECONDS_MIN..PLAYER_SKIP_SECONDS_MAX } ?: PLAYER_SKIP_SECONDS_DEFAULT

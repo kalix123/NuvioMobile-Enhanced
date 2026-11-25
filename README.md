@@ -82,6 +82,7 @@ Everything below is added on top of upstream Nuvio Mobile. Features that upstrea
 | Feature | Where | Default |
 |---|---|---|
 | **Tap-to-seek on the timeline** — tap anywhere on the progress bar to jump there. | — | Always on |
+| **Custom skip step** — type any skip forward / skip back step from 1 to 600 seconds, alongside the 5, 10, 15 and 30 s presets. Used by the skip buttons, double-tap seek and arrow keys. | Settings → Playback → Player interface → **Skip Backward** / **Skip Forward** | 10 s |
 | **Volume Boost** — volume can be boosted past 100% | Swipe up all the way past 100% | Always on |
 | **Stream Quality Chooser** — add quality indicator and ability to choose quality on HLS stream whenever available, in both the legacy and the new control layout | Player screen overlay | Best quality supported by hardware |
 | **Info Button** — add playback info button to show currently playing video and audio information, in both the legacy and the new control layout | Player screen overlay | — |

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_playback_skip_custom_input">Custom</string>
+    <string name="settings_playback_skip_custom_unit">s</string>
+    <string name="settings_playback_skip_custom_range">Enter a value from %1$d to %2$d seconds.</string>
+</resources>
